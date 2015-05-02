@@ -10,22 +10,26 @@
 	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>85401C990E3C209A7D74ADB076F79BCB427DCE4A</key>
+		<string>https://github.com/cnisbet13/iTunesSearch.git</string>
 		<key>8F41B4E3B45357F56988EF89B83EB7E9F4DBA817</key>
 		<string>https://github.com/cnisb044/Bill-Splitter.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CraigSearch/CraigSearch.xcodeproj/project.xcworkspace</string>
+	<string>CraigSearch.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>85401C990E3C209A7D74ADB076F79BCB427DCE4A</key>
+		<string>../..</string>
 		<key>8F41B4E3B45357F56988EF89B83EB7E9F4DBA817</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/cnisb044/Bill-Splitter.git</string>
+	<string>https://github.com/cnisbet13/iTunesSearch.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>8F41B4E3B45357F56988EF89B83EB7E9F4DBA817</string>
+	<string>85401C990E3C209A7D74ADB076F79BCB427DCE4A</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -34,7 +38,15 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>8F41B4E3B45357F56988EF89B83EB7E9F4DBA817</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Xcode</string>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>85401C990E3C209A7D74ADB076F79BCB427DCE4A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CraigSearch</string>
 		</dict>
 	</array>
 </dict>

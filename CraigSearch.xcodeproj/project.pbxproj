@@ -13,6 +13,7 @@
 		96E19B511AF46B0700495E00 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E19B501AF46B0700495E00 /* Images.xcassets */; };
 		96E19B541AF46B0700495E00 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E19B521AF46B0700495E00 /* LaunchScreen.xib */; };
 		96E19B601AF46B0700495E00 /* CraigSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E19B5F1AF46B0700495E00 /* CraigSearchTests.swift */; };
+		96E19B6C1AF4AE9D00495E00 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E19B6B1AF4AE9D00495E00 /* SearchResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		96E19B591AF46B0700495E00 /* CraigSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CraigSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E19B5E1AF46B0700495E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96E19B5F1AF46B0700495E00 /* CraigSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CraigSearchTests.swift; sourceTree = "<group>"; };
+		96E19B6B1AF4AE9D00495E00 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				96E19B491AF46B0700495E00 /* AppDelegate.swift */,
 				96E19B4B1AF46B0700495E00 /* SearchViewController.swift */,
+				96E19B6B1AF4AE9D00495E00 /* SearchResult.swift */,
 				96E19B4D1AF46B0700495E00 /* Main.storyboard */,
 				96E19B501AF46B0700495E00 /* Images.xcassets */,
 				96E19B521AF46B0700495E00 /* LaunchScreen.xib */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96E19B4C1AF46B0700495E00 /* SearchViewController.swift in Sources */,
+				96E19B6C1AF4AE9D00495E00 /* SearchResult.swift in Sources */,
 				96E19B4A1AF46B0700495E00 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
