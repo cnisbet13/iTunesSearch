@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96E19B4A1AF46B0700495E00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E19B491AF46B0700495E00 /* AppDelegate.swift */; };
+		96E19B4C1AF46B0700495E00 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E19B4B1AF46B0700495E00 /* SearchViewController.swift */; };
+		96E19B4F1AF46B0700495E00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E19B4D1AF46B0700495E00 /* Main.storyboard */; };
+		96E19B511AF46B0700495E00 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E19B501AF46B0700495E00 /* Images.xcassets */; };
+		96E19B541AF46B0700495E00 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E19B521AF46B0700495E00 /* LaunchScreen.xib */; };
+		96E19B601AF46B0700495E00 /* CraigSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E19B5F1AF46B0700495E00 /* CraigSearchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96E19B5A1AF46B0700495E00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96E19B3C1AF46B0700495E00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96E19B431AF46B0700495E00;
+			remoteInfo = CraigSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		96E19B441AF46B0700495E00 /* CraigSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CraigSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96E19B481AF46B0700495E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96E19B491AF46B0700495E00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		96E19B4B1AF46B0700495E00 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		96E19B4E1AF46B0700495E00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96E19B501AF46B0700495E00 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		96E19B531AF46B0700495E00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		96E19B591AF46B0700495E00 /* CraigSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CraigSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96E19B5E1AF46B0700495E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96E19B5F1AF46B0700495E00 /* CraigSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CraigSearchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96E19B411AF46B0700495E00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96E19B561AF46B0700495E00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96E19B3B1AF46B0700495E00 = {
+			isa = PBXGroup;
+			children = (
+				96E19B461AF46B0700495E00 /* CraigSearch */,
+				96E19B5C1AF46B0700495E00 /* CraigSearchTests */,
+				96E19B451AF46B0700495E00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96E19B451AF46B0700495E00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96E19B441AF46B0700495E00 /* CraigSearch.app */,
+				96E19B591AF46B0700495E00 /* CraigSearchTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96E19B461AF46B0700495E00 /* CraigSearch */ = {
+			isa = PBXGroup;
+			children = (
+				96E19B491AF46B0700495E00 /* AppDelegate.swift */,
+				96E19B4B1AF46B0700495E00 /* SearchViewController.swift */,
+				96E19B4D1AF46B0700495E00 /* Main.storyboard */,
+				96E19B501AF46B0700495E00 /* Images.xcassets */,
+				96E19B521AF46B0700495E00 /* LaunchScreen.xib */,
+				96E19B471AF46B0700495E00 /* Supporting Files */,
+			);
+			path = CraigSearch;
+			sourceTree = "<group>";
+		};
+		96E19B471AF46B0700495E00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96E19B481AF46B0700495E00 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96E19B5C1AF46B0700495E00 /* CraigSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				96E19B5F1AF46B0700495E00 /* CraigSearchTests.swift */,
+				96E19B5D1AF46B0700495E00 /* Supporting Files */,
+			);
+			path = CraigSearchTests;
+			sourceTree = "<group>";
+		};
+		96E19B5D1AF46B0700495E00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96E19B5E1AF46B0700495E00 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96E19B431AF46B0700495E00 /* CraigSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96E19B631AF46B0700495E00 /* Build configuration list for PBXNativeTarget "CraigSearch" */;
+			buildPhases = (
+				96E19B401AF46B0700495E00 /* Sources */,
+				96E19B411AF46B0700495E00 /* Frameworks */,
+				96E19B421AF46B0700495E00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CraigSearch;
+			productName = CraigSearch;
+			productReference = 96E19B441AF46B0700495E00 /* CraigSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96E19B581AF46B0700495E00 /* CraigSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96E19B661AF46B0700495E00 /* Build configuration list for PBXNativeTarget "CraigSearchTests" */;
+			buildPhases = (
+				96E19B551AF46B0700495E00 /* Sources */,
+				96E19B561AF46B0700495E00 /* Frameworks */,
+				96E19B571AF46B0700495E00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96E19B5B1AF46B0700495E00 /* PBXTargetDependency */,
+			);
+			name = CraigSearchTests;
+			productName = CraigSearchTests;
+			productReference = 96E19B591AF46B0700495E00 /* CraigSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96E19B3C1AF46B0700495E00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Calvin Nisbet";
+				TargetAttributes = {
+					96E19B431AF46B0700495E00 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					96E19B581AF46B0700495E00 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 96E19B431AF46B0700495E00;
+					};
+				};
+			};
+			buildConfigurationList = 96E19B3F1AF46B0700495E00 /* Build configuration list for PBXProject "CraigSearch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96E19B3B1AF46B0700495E00;
+			productRefGroup = 96E19B451AF46B0700495E00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96E19B431AF46B0700495E00 /* CraigSearch */,
+				96E19B581AF46B0700495E00 /* CraigSearchTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96E19B421AF46B0700495E00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96E19B4F1AF46B0700495E00 /* Main.storyboard in Resources */,
+				96E19B541AF46B0700495E00 /* LaunchScreen.xib in Resources */,
+				96E19B511AF46B0700495E00 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96E19B571AF46B0700495E00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96E19B401AF46B0700495E00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96E19B4C1AF46B0700495E00 /* SearchViewController.swift in Sources */,
+				96E19B4A1AF46B0700495E00 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96E19B551AF46B0700495E00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96E19B601AF46B0700495E00 /* CraigSearchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96E19B5B1AF46B0700495E00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96E19B431AF46B0700495E00 /* CraigSearch */;
+			targetProxy = 96E19B5A1AF46B0700495E00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		96E19B4D1AF46B0700495E00 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96E19B4E1AF46B0700495E00 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		96E19B521AF46B0700495E00 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96E19B531AF46B0700495E00 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96E19B611AF46B0700495E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		96E19B621AF46B0700495E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		96E19B641AF46B0700495E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CraigSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		96E19B651AF46B0700495E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CraigSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		96E19B671AF46B0700495E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CraigSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CraigSearch.app/CraigSearch";
+			};
+			name = Debug;
+		};
+		96E19B681AF46B0700495E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CraigSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CraigSearch.app/CraigSearch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96E19B3F1AF46B0700495E00 /* Build configuration list for PBXProject "CraigSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96E19B611AF46B0700495E00 /* Debug */,
+				96E19B621AF46B0700495E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96E19B631AF46B0700495E00 /* Build configuration list for PBXNativeTarget "CraigSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96E19B641AF46B0700495E00 /* Debug */,
+				96E19B651AF46B0700495E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		96E19B661AF46B0700495E00 /* Build configuration list for PBXNativeTarget "CraigSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96E19B671AF46B0700495E00 /* Debug */,
+				96E19B681AF46B0700495E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96E19B3C1AF46B0700495E00 /* Project object */;
+}
