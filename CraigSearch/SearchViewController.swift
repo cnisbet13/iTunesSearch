@@ -15,17 +15,14 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var searchResults = [SearchResult]()
+    var hasSearched = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
         tableView.contentInset = UIEdgeInsets(top: 64, left: 0, bottom: 0, right: 0)
-        
-        
-        
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -33,22 +30,24 @@ class SearchViewController: UIViewController {
 }
 
 
-    extension SearchViewController : UISearchBarDelegate {
-        func searchBarButtonClicked(searchBar: UISearchBar) {
+extension SearchViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
         
-            searchBar.resignFirstResponder()
-            searchResults = [SearchResult]()
-            
-            
-            
+        hasSearched = true
+        searchResults = [SearchResult]()
+        
+        if searchBar.text != "justin bieber" {
             for i in 0...2 {
-                let searchResponse = SearchResult()
-                searchResponse.name = String(format: "Fake Result %d for", i)
-                searchResponse.artistName = searchBar.text
-                searchResults.append(searchResponse)
+                let searchResult = SearchResult()
+                searchResult.name = String(format: "Fake Result %d for", i)
+                searchResult.artistName = searchBar.text
+                searchResults.append(searchResult)
             }
-            tableView.reloadData()
-}
+        }
+        
+        tableView.reloadData()
+    }
         func positionForBar(bar: UIBarPositioning) -> UIBarPosition {
             return .TopAttached
         }
@@ -73,10 +72,14 @@ extension SearchViewController :UITableViewDataSource {
         if cell == nil {
             cell = UITableViewCell(style: .Subtitle, reuseIdentifier: cellIdentifier)
         }
-        
+        if searchResults.count == 0 {
+            cell.textLabel!.text = "(Nothing found)"
+            cell.detailTextLabel!.text = ""
+        } else {
         let searchResponse = searchResults[indexPath.row]
         cell.textLabel!.text = searchResponse.name
         cell.detailTextLabel!.text = searchResponse.artistName
+        }
         return cell
     }
 }

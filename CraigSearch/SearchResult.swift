@@ -1,6 +1,5 @@
-
-    class SearchResult {
-        var name = ""
-        var artistName = ""
+class SearchResult {
+    var name = ""
+    var artistName = ""
     }
     

@@ -81,10 +81,10 @@
 			children = (
 				96E19B491AF46B0700495E00 /* AppDelegate.swift */,
 				96E19B4B1AF46B0700495E00 /* SearchViewController.swift */,
-				96E19B6B1AF4AE9D00495E00 /* SearchResult.swift */,
 				96E19B4D1AF46B0700495E00 /* Main.storyboard */,
 				96E19B501AF46B0700495E00 /* Images.xcassets */,
 				96E19B521AF46B0700495E00 /* LaunchScreen.xib */,
+				96E19B6B1AF4AE9D00495E00 /* SearchResult.swift */,
 				96E19B471AF46B0700495E00 /* Supporting Files */,
 			);
 			path = CraigSearch;
