@@ -1,4 +1,4 @@
-class SearchResult {
+class searchResponse {
     var name = ""
     var artistName = ""
     }
