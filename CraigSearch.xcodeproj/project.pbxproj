@@ -30,8 +30,9 @@
 		96E19B8B1AF8640400495E00 /* PriceButton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E19B7C1AF8640400495E00 /* PriceButton@3x.png */; };
 		96E19B8D1AF8645700495E00 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E19B8C1AF8645700495E00 /* SearchResultCell.xib */; };
 		96E19B8F1AF9026600495E00 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E19B8E1AF9026600495E00 /* SearchResultCell.swift */; };
-		96E19B911AF917C400495E00 /* NothingThere.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E19B901AF917C400495E00 /* NothingThere.xib */; };
+		96E19B911AF917C400495E00 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E19B901AF917C400495E00 /* NothingFoundCell.xib */; };
 		96E19BA31AFCB1D800495E00 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E19BA21AFCB1D800495E00 /* SearchResult.swift */; };
+		96E19BA51AFCB7A400495E00 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E19BA41AFCB7A400495E00 /* LoadingCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,8 +73,9 @@
 		96E19B7C1AF8640400495E00 /* PriceButton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PriceButton@3x.png"; sourceTree = "<group>"; };
 		96E19B8C1AF8645700495E00 /* SearchResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SearchResultCell.xib; path = Images/SearchResultCell.xib; sourceTree = "<group>"; };
 		96E19B8E1AF9026600495E00 /* SearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
-		96E19B901AF917C400495E00 /* NothingThere.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NothingThere.xib; sourceTree = "<group>"; };
+		96E19B901AF917C400495E00 /* NothingFoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
 		96E19BA21AFCB1D800495E00 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResult.swift; path = ../SearchResult.swift; sourceTree = "<group>"; };
+		96E19BA41AFCB7A400495E00 /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +123,8 @@
 				96E19B8E1AF9026600495E00 /* SearchResultCell.swift */,
 				96E19B4D1AF46B0700495E00 /* Main.storyboard */,
 				96E19B8C1AF8645700495E00 /* SearchResultCell.xib */,
-				96E19B901AF917C400495E00 /* NothingThere.xib */,
+				96E19BA41AFCB7A400495E00 /* LoadingCell.xib */,
+				96E19B901AF917C400495E00 /* NothingFoundCell.xib */,
 				96E19B501AF46B0700495E00 /* Images.xcassets */,
 				96E19B6D1AF8640400495E00 /* Images */,
 				96E19B521AF46B0700495E00 /* LaunchScreen.xib */,
@@ -265,12 +268,13 @@
 				96E19B7F1AF8640400495E00 /* CloseButton@3x.png in Resources */,
 				96E19B851AF8640400495E00 /* LandscapeButton@3x.png in Resources */,
 				96E19B861AF8640400495E00 /* Placeholder.png in Resources */,
-				96E19B911AF917C400495E00 /* NothingThere.xib in Resources */,
+				96E19B911AF917C400495E00 /* NothingFoundCell.xib in Resources */,
 				96E19B821AF8640400495E00 /* LandscapeBackground@3x.png in Resources */,
 				96E19B871AF8640400495E00 /* Placeholder@2x.png in Resources */,
 				96E19B811AF8640400495E00 /* LandscapeBackground@2x.png in Resources */,
 				96E19B8B1AF8640400495E00 /* PriceButton@3x.png in Resources */,
 				96E19B841AF8640400495E00 /* LandscapeButton@2x.png in Resources */,
+				96E19BA51AFCB7A400495E00 /* LoadingCell.xib in Resources */,
 				96E19B7D1AF8640400495E00 /* CloseButton.png in Resources */,
 				96E19B7E1AF8640400495E00 /* CloseButton@2x.png in Resources */,
 				96E19B8D1AF8645700495E00 /* SearchResultCell.xib in Resources */,
