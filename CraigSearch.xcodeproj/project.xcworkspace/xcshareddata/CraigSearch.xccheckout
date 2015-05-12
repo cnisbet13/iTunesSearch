@@ -7,7 +7,7 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>D979CE01-82BE-4484-BFF1-5AF812C5F223</string>
 	<key>IDESourceControlProjectName</key>
-	<string>CraigSearch</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>85401C990E3C209A7D74ADB076F79BCB427DCE4A</key>
@@ -16,7 +16,7 @@
 		<string>https://github.com/cnisb044/Bill-Splitter.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CraigSearch.xcodeproj</string>
+	<string>CraigSearch.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>85401C990E3C209A7D74ADB076F79BCB427DCE4A</key>

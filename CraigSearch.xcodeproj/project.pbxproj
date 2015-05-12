@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96A030741AFFB7BB00783268 /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A030731AFFB7BB00783268 /* UIImageView+DownloadImage.swift */; };
+		96A030781B008BEE00783268 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A030771B008BEE00783268 /* DetailViewController.swift */; };
+		96A0307A1B011F8200783268 /* DimmedPresentationContro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A030791B011F8200783268 /* DimmedPresentationContro.swift */; };
 		96E19B4A1AF46B0700495E00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E19B491AF46B0700495E00 /* AppDelegate.swift */; };
 		96E19B4C1AF46B0700495E00 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E19B4B1AF46B0700495E00 /* SearchViewController.swift */; };
 		96E19B4F1AF46B0700495E00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E19B4D1AF46B0700495E00 /* Main.storyboard */; };
 		96E19B511AF46B0700495E00 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E19B501AF46B0700495E00 /* Images.xcassets */; };
-		96E19B541AF46B0700495E00 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E19B521AF46B0700495E00 /* LaunchScreen.xib */; };
 		96E19B601AF46B0700495E00 /* CraigSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E19B5F1AF46B0700495E00 /* CraigSearchTests.swift */; };
 		96E19B7D1AF8640400495E00 /* CloseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E19B6E1AF8640400495E00 /* CloseButton.png */; };
 		96E19B7E1AF8640400495E00 /* CloseButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E19B6F1AF8640400495E00 /* CloseButton@2x.png */; };
@@ -46,13 +48,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		96A030731AFFB7BB00783268 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
+		96A030771B008BEE00783268 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		96A030791B011F8200783268 /* DimmedPresentationContro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmedPresentationContro.swift; sourceTree = "<group>"; };
 		96E19B441AF46B0700495E00 /* CraigSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CraigSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E19B481AF46B0700495E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96E19B491AF46B0700495E00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96E19B4B1AF46B0700495E00 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		96E19B4E1AF46B0700495E00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96E19B501AF46B0700495E00 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		96E19B531AF46B0700495E00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		96E19B591AF46B0700495E00 /* CraigSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CraigSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E19B5E1AF46B0700495E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96E19B5F1AF46B0700495E00 /* CraigSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CraigSearchTests.swift; sourceTree = "<group>"; };
@@ -99,6 +103,7 @@
 		96E19B3B1AF46B0700495E00 = {
 			isa = PBXGroup;
 			children = (
+				96A030731AFFB7BB00783268 /* UIImageView+DownloadImage.swift */,
 				96E19B461AF46B0700495E00 /* CraigSearch */,
 				96E19B5C1AF46B0700495E00 /* CraigSearchTests */,
 				96E19B451AF46B0700495E00 /* Products */,
@@ -119,15 +124,16 @@
 			children = (
 				96E19B491AF46B0700495E00 /* AppDelegate.swift */,
 				96E19B4B1AF46B0700495E00 /* SearchViewController.swift */,
+				96A030791B011F8200783268 /* DimmedPresentationContro.swift */,
 				96E19BA21AFCB1D800495E00 /* SearchResult.swift */,
 				96E19B8E1AF9026600495E00 /* SearchResultCell.swift */,
+				96A030771B008BEE00783268 /* DetailViewController.swift */,
 				96E19B4D1AF46B0700495E00 /* Main.storyboard */,
 				96E19B8C1AF8645700495E00 /* SearchResultCell.xib */,
 				96E19BA41AFCB7A400495E00 /* LoadingCell.xib */,
 				96E19B901AF917C400495E00 /* NothingFoundCell.xib */,
 				96E19B501AF46B0700495E00 /* Images.xcassets */,
 				96E19B6D1AF8640400495E00 /* Images */,
-				96E19B521AF46B0700495E00 /* LaunchScreen.xib */,
 				96E19B471AF46B0700495E00 /* Supporting Files */,
 			);
 			path = CraigSearch;
@@ -279,7 +285,6 @@
 				96E19B7E1AF8640400495E00 /* CloseButton@2x.png in Resources */,
 				96E19B8D1AF8645700495E00 /* SearchResultCell.xib in Resources */,
 				96E19B4F1AF46B0700495E00 /* Main.storyboard in Resources */,
-				96E19B541AF46B0700495E00 /* LaunchScreen.xib in Resources */,
 				96E19B511AF46B0700495E00 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,10 +303,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96A0307A1B011F8200783268 /* DimmedPresentationContro.swift in Sources */,
 				96E19B4C1AF46B0700495E00 /* SearchViewController.swift in Sources */,
 				96E19BA31AFCB1D800495E00 /* SearchResult.swift in Sources */,
 				96E19B8F1AF9026600495E00 /* SearchResultCell.swift in Sources */,
+				96A030781B008BEE00783268 /* DetailViewController.swift in Sources */,
 				96E19B4A1AF46B0700495E00 /* AppDelegate.swift in Sources */,
+				96A030741AFFB7BB00783268 /* UIImageView+DownloadImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,14 +338,6 @@
 				96E19B4E1AF46B0700495E00 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		96E19B521AF46B0700495E00 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				96E19B531AF46B0700495E00 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
