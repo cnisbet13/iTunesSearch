@@ -20,6 +20,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var priceButton: UIButton!
 
     var searchResult: SearchResult!
+    var downloadTask: NSURLSessionDownloadTask?
    
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -27,9 +28,24 @@ class DetailViewController: UIViewController {
         transitioningDelegate = self
     }
     
+    
+    deinit {
+        println("deinit \(self)")
+        downloadTask?.cancel()
+    }
+    
+    @IBAction func openInStore() {
+        if let url = NSURL(string: searchResult.storeURL) {
+        UIApplication.sharedApplication().openURL(url)
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.tintColor = UIColor(red: 20/255, green: 160/255, blue: 160/255, alpha: 1)
+        view.backgroundColor = UIColor.clearColor() 
+        
         popupView.layer.cornerRadius = 10
     
         let gestureRec = UITapGestureRecognizer(target: self, action: Selector("close"))
@@ -45,6 +61,8 @@ class DetailViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    
     
     func updateUI() {
         
@@ -70,8 +88,13 @@ class DetailViewController: UIViewController {
             priceText = ""
         }
         priceButton.setTitle(priceText, forState: .Normal)
+    
+        if let url = NSURL(string: searchResult.artworkURL100) {
+            downloadTask = artworkImageView.loadImageWithURL(url)
         }
-        
+    }
+    
+    
     
     
     @IBAction func close() {
@@ -85,7 +108,24 @@ class DetailViewController: UIViewController {
             
             return DimmedPresentationController(presentedViewController: presented, presentingViewController: presenting)
         }
+        
+        
+        func animationControllerForDismissedController(
+            dismissed: UIViewController)
+            -> UIViewControllerAnimatedTransitioning? {
+            return SlideOutAnimation()
+        }
+        
+        
+        func animationControllerForPresentedController(
+            presented: UIViewController,
+            presentingController presenting: UIViewController,
+            sourceController source: UIViewController)
+            -> UIViewControllerAnimatedTransitioning? {
+            return BounceAnimateController()
+        }
     }
+
 
 
 
@@ -95,14 +135,3 @@ extension DetailViewController: UIGestureRecognizerDelegate {
     return (touch.view === view)
     }
 }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
