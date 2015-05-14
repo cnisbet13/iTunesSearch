@@ -34,6 +34,12 @@ class DetailViewController: UIViewController {
         downloadTask?.cancel()
     }
     
+    enum AnimationStyle {
+        case Slide
+        case Fade
+    }
+    var dismissAnimationStyle = AnimationStyle.Fade
+    
     @IBAction func openInStore() {
         if let url = NSURL(string: searchResult.storeURL) {
         UIApplication.sharedApplication().openURL(url)
@@ -45,6 +51,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         view.tintColor = UIColor(red: 20/255, green: 160/255, blue: 160/255, alpha: 1)
         view.backgroundColor = UIColor.clearColor() 
+        
         
         popupView.layer.cornerRadius = 10
     
@@ -98,7 +105,8 @@ class DetailViewController: UIViewController {
     
     
     @IBAction func close() {
-            dismissViewControllerAnimated(true, completion: nil)
+        dismissViewControllerAnimated(true, completion: nil)
+        dismissAnimationStyle = .Slide
     }
 }
     
@@ -110,11 +118,16 @@ class DetailViewController: UIViewController {
         }
         
         
-        func animationControllerForDismissedController(
-            dismissed: UIViewController)
-            -> UIViewControllerAnimatedTransitioning? {
-            return SlideOutAnimation()
-        }
+            func animationControllerForDismissedController(
+                dismissed: UIViewController)
+                -> UIViewControllerAnimatedTransitioning? {
+                switch dismissAnimationStyle {
+            case .Slide:
+                return SlideOutAnimation()
+            case .Fade:
+                return FadeOutAnimationController()
+                }
+            }
         
         
         func animationControllerForPresentedController(

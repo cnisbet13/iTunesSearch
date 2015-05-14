@@ -12,11 +12,13 @@ class GradientView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        autoresizingMask = .FlexibleWidth | .FlexibleHeight
         backgroundColor = UIColor.clearColor()
     }
 
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        autoresizingMask = .FlexibleWidth | .FlexibleHeight
         backgroundColor = UIColor.clearColor()
     }
     override func drawRect(rect: CGRect) {

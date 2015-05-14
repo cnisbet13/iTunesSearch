@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		965186621B019751005793D2 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965186611B019751005793D2 /* GradientView.swift */; };
+		9682122E1B049DBF006A9B26 /* Searches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9682122D1B049DBF006A9B26 /* Searches.swift */; };
 		96A030741AFFB7BB00783268 /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A030731AFFB7BB00783268 /* UIImageView+DownloadImage.swift */; };
 		96A030781B008BEE00783268 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A030771B008BEE00783268 /* DetailViewController.swift */; };
 		96A0307A1B011F8200783268 /* DimmedPresentationContro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A030791B011F8200783268 /* DimmedPresentationContro.swift */; };
@@ -39,6 +40,7 @@
 		96F8E04F1B030E0B00BE943F /* BounceAnimateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F8E04E1B030E0B00BE943F /* BounceAnimateController.swift */; };
 		96F8E0511B03CB9F00BE943F /* SlideOutAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F8E0501B03CB9F00BE943F /* SlideOutAnimation.swift */; };
 		96F8E0531B03CD0200BE943F /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F8E0521B03CD0200BE943F /* LandscapeViewController.swift */; };
+		96F8E0581B048F1A00BE943F /* FadeOutAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F8E0571B048F1A00BE943F /* FadeOutAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,8 +54,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		965186611B019751005793D2 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		96A030731AFFB7BB00783268 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
+		965186611B019751005793D2 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = ../GradientView.swift; sourceTree = "<group>"; };
+		9682122D1B049DBF006A9B26 /* Searches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Searches.swift; path = ../Searches.swift; sourceTree = "<group>"; };
+		96A030731AFFB7BB00783268 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImageView+DownloadImage.swift"; path = "../UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
 		96A030771B008BEE00783268 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		96A030791B011F8200783268 /* DimmedPresentationContro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmedPresentationContro.swift; sourceTree = "<group>"; };
 		96E19B441AF46B0700495E00 /* CraigSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CraigSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +91,7 @@
 		96F8E04E1B030E0B00BE943F /* BounceAnimateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BounceAnimateController.swift; sourceTree = "<group>"; };
 		96F8E0501B03CB9F00BE943F /* SlideOutAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideOutAnimation.swift; sourceTree = "<group>"; };
 		96F8E0521B03CD0200BE943F /* LandscapeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
+		96F8E0571B048F1A00BE943F /* FadeOutAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeOutAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +115,6 @@
 		96E19B3B1AF46B0700495E00 = {
 			isa = PBXGroup;
 			children = (
-				965186611B019751005793D2 /* GradientView.swift */,
-				96A030731AFFB7BB00783268 /* UIImageView+DownloadImage.swift */,
 				96E19B461AF46B0700495E00 /* CraigSearch */,
 				96E19B5C1AF46B0700495E00 /* CraigSearchTests */,
 				96E19B451AF46B0700495E00 /* Products */,
@@ -132,18 +134,14 @@
 			isa = PBXGroup;
 			children = (
 				96E19B491AF46B0700495E00 /* AppDelegate.swift */,
-				96E19B4B1AF46B0700495E00 /* SearchViewController.swift */,
-				96A030791B011F8200783268 /* DimmedPresentationContro.swift */,
-				96E19BA21AFCB1D800495E00 /* SearchResult.swift */,
-				96E19B8E1AF9026600495E00 /* SearchResultCell.swift */,
+				965186611B019751005793D2 /* GradientView.swift */,
+				96A030731AFFB7BB00783268 /* UIImageView+DownloadImage.swift */,
 				96A030771B008BEE00783268 /* DetailViewController.swift */,
+				96F8E0571B048F1A00BE943F /* FadeOutAnimation.swift */,
 				96F8E0521B03CD0200BE943F /* LandscapeViewController.swift */,
-				96E19B4D1AF46B0700495E00 /* Main.storyboard */,
-				96F8E0501B03CB9F00BE943F /* SlideOutAnimation.swift */,
-				96F8E04E1B030E0B00BE943F /* BounceAnimateController.swift */,
-				96E19B8C1AF8645700495E00 /* SearchResultCell.xib */,
-				96E19BA41AFCB7A400495E00 /* LoadingCell.xib */,
-				96E19B901AF917C400495E00 /* NothingFoundCell.xib */,
+				96F8E0551B048B5600BE943F /* Pop-Up Animation Controllers */,
+				96F8E0541B048B4900BE943F /* Search View Controllers */,
+				96F8E0561B048B6A00BE943F /* Storyboard and XIBs */,
 				96E19B501AF46B0700495E00 /* Images.xcassets */,
 				96E19B6D1AF8640400495E00 /* Images */,
 				96E19B471AF46B0700495E00 /* Supporting Files */,
@@ -196,6 +194,38 @@
 				96E19B7C1AF8640400495E00 /* PriceButton@3x.png */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		96F8E0541B048B4900BE943F /* Search View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9682122D1B049DBF006A9B26 /* Searches.swift */,
+				96E19B4B1AF46B0700495E00 /* SearchViewController.swift */,
+				96E19BA21AFCB1D800495E00 /* SearchResult.swift */,
+				96E19B8E1AF9026600495E00 /* SearchResultCell.swift */,
+			);
+			name = "Search View Controllers";
+			sourceTree = "<group>";
+		};
+		96F8E0551B048B5600BE943F /* Pop-Up Animation Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				96A030791B011F8200783268 /* DimmedPresentationContro.swift */,
+				96F8E0501B03CB9F00BE943F /* SlideOutAnimation.swift */,
+				96F8E04E1B030E0B00BE943F /* BounceAnimateController.swift */,
+			);
+			name = "Pop-Up Animation Controllers";
+			sourceTree = "<group>";
+		};
+		96F8E0561B048B6A00BE943F /* Storyboard and XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				96E19B4D1AF46B0700495E00 /* Main.storyboard */,
+				96E19B8C1AF8645700495E00 /* SearchResultCell.xib */,
+				96E19BA41AFCB7A400495E00 /* LoadingCell.xib */,
+				96E19B901AF917C400495E00 /* NothingFoundCell.xib */,
+			);
+			name = "Storyboard and XIBs";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96A0307A1B011F8200783268 /* DimmedPresentationContro.swift in Sources */,
+				96F8E0581B048F1A00BE943F /* FadeOutAnimation.swift in Sources */,
 				96F8E04F1B030E0B00BE943F /* BounceAnimateController.swift in Sources */,
 				96E19B4C1AF46B0700495E00 /* SearchViewController.swift in Sources */,
 				96E19BA31AFCB1D800495E00 /* SearchResult.swift in Sources */,
@@ -324,6 +355,7 @@
 				96A030781B008BEE00783268 /* DetailViewController.swift in Sources */,
 				96E19B4A1AF46B0700495E00 /* AppDelegate.swift in Sources */,
 				965186621B019751005793D2 /* GradientView.swift in Sources */,
+				9682122E1B049DBF006A9B26 /* Searches.swift in Sources */,
 				96A030741AFFB7BB00783268 /* UIImageView+DownloadImage.swift in Sources */,
 				96F8E0511B03CB9F00BE943F /* SlideOutAnimation.swift in Sources */,
 			);
