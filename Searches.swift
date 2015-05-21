@@ -7,42 +7,91 @@
 //
 
 import Foundation
+import UIKit
 
 typealias SearchComplete = (Bool) -> Void
 
 class Searches {
-    
     enum Category: Int {
-        case All = 0
-        case Music = 1
-        case Software = 2
-        case EBook = 3
-        
-        var entityName: String {
-            switch self {
-        case .All: return ""
-        case .Music: return "musicTrack"
-        case .Software: return "software"
-        case .EBook: return "ebook"
-            }
+    case All = 0
+    case Music = 1
+    case Software = 2
+    case EBook = 3
+    
+    var entityName: String {
+        switch self {
+    case .All: return ""
+    case .Music: return "musicTrack"
+    case .Software: return "software"
+    case .EBook: return "ebook"
         }
-        
+    }
     }
     
-    var searchResults = [SearchResult]()
-    var hasSearched = false
-    var isLoading = false
+    enum State {
+        case NotSearchedYet
+        case Loading
+        case NoResults
+        case Results([SearchResult])
+    }
+    
+    private(set) var state: State = .NotSearchedYet
     
     private var dataTask: NSURLSessionDataTask? = nil
     
-    func urlWithSearchText(searchText: String, category: Category) -> NSURL {
-        let entityName = category.entityName
-        switch category {
-    case .All: entityName = ""
-    case .Music: entityName = "musicTrack"
-    case .Software: entityName = "software"
-    case .EBook: entityName = "ebook"
+    func performSearchForText(text: String, category: Category, completion: SearchComplete) {
+        if !text.isEmpty {
+        dataTask?.cancel()
+        
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+        
+        state = .Loading
+        
+        let url = urlWithSearchText(text, category: category)
+        
+        let session = NSURLSession.sharedSession()
+        dataTask = session.dataTaskWithURL(url, completionHandler: {
+            data, response, error in
+            
+            self.state = .NotSearchedYet
+            var success = false
+            
+            if let error = error {
+                if error.code == -999 { return }  // Search was cancelled
+                
+            } else if let httpResponse = response as? NSHTTPURLResponse {
+                if httpResponse.statusCode == 200 {
+                    if let dictionary = self.parseJSON(data) {
+                    var searchResults = self.parseDictionary(dictionary)
+                    if searchResults.isEmpty {
+                    self.state = .NoResults
+                } else {
+                    searchResults.sort(<)
+                    self.state = .Results(searchResults)
+                    }
+                    success = true
+                    }
+                }
+            }
+            
+            dispatch_async(dispatch_get_main_queue()) {
+                    UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+                    completion(success)
+            }
+            })
+        
+        dataTask?.resume()
         }
+    }
+    
+    private func urlWithSearchText(searchText: String, category: Category) -> NSURL {
+            var entityName: String
+            switch category {
+            case .All: entityName = ""
+            case .Music: entityName = "musicTrack"
+            case .Software: entityName = "software"
+            case .EBook: entityName = "ebook"
+            }
         
         
         let escapedSearchText = searchText.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
@@ -184,50 +233,8 @@ class Searches {
                 }
             return searchResult
     }
-    
-    func performSearchForText(text: String, category: Category, completion: SearchComplete) {
-                                            
-                                            
-        if !text.isEmpty {
-        dataTask?.cancel()
-        isLoading = true
-        hasSearched = true
-        searchResults = [SearchResult]()
-        let url = urlWithSearchText(text, category: category)
-                    
-        let session = NSURLSession.sharedSession()
-        dataTask = session.dataTaskWithURL(url, completionHandler: {
-        data, response, error in
-        var successful = false
-        if let error = error {
-        if error.code == -999 { return }
-        
-    } else if let httpResponse = response as? NSHTTPURLResponse {
-        if httpResponse.statusCode == 200 {
-        
-        if let dictionary = self.parseJSON(data) {
-            self.searchResults = self.parseDictionary(dictionary)
-            self.searchResults.sort(<)
-            println("Success! ")
-            self.isLoading = false
-            successful = true
-            return
-        }
-        }
-        }
-        println("Failure! \(response)")
-        if !successful {
-        self.hasSearched = false
-        self.isLoading = false
-        }
-        dispatch_async(dispatch_get_main_queue()) {
-                                                completion(successful)
-        }
-        })
-        dataTask?.resume()
-        }
-    }
 }
 
-    
-    
+
+
+

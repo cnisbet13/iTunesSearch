@@ -34,9 +34,9 @@
 		96E19B8B1AF8640400495E00 /* PriceButton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 96E19B7C1AF8640400495E00 /* PriceButton@3x.png */; };
 		96E19B8D1AF8645700495E00 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E19B8C1AF8645700495E00 /* SearchResultCell.xib */; };
 		96E19B8F1AF9026600495E00 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E19B8E1AF9026600495E00 /* SearchResultCell.swift */; };
-		96E19B911AF917C400495E00 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E19B901AF917C400495E00 /* NothingFoundCell.xib */; };
 		96E19BA31AFCB1D800495E00 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E19BA21AFCB1D800495E00 /* SearchResult.swift */; };
-		96E19BA51AFCB7A400495E00 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E19BA41AFCB7A400495E00 /* LoadingCell.xib */; };
+		96F7FF5A1B0BC14D00015477 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96F7FF5C1B0BC14D00015477 /* NothingFoundCell.xib */; };
+		96F7FF5E1B0C0CC200015477 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96F7FF601B0C0CC200015477 /* LoadingCell.xib */; };
 		96F8E04F1B030E0B00BE943F /* BounceAnimateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F8E04E1B030E0B00BE943F /* BounceAnimateController.swift */; };
 		96F8E0511B03CB9F00BE943F /* SlideOutAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F8E0501B03CB9F00BE943F /* SlideOutAnimation.swift */; };
 		96F8E0531B03CD0200BE943F /* LandscapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F8E0521B03CD0200BE943F /* LandscapeViewController.swift */; };
@@ -59,6 +59,8 @@
 		96A030731AFFB7BB00783268 /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImageView+DownloadImage.swift"; path = "../UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
 		96A030771B008BEE00783268 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		96A030791B011F8200783268 /* DimmedPresentationContro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DimmedPresentationContro.swift; sourceTree = "<group>"; };
+		96B308741B0C62D300A1CAD3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		96B308751B0C62D300A1CAD3 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LoadingCell.strings; sourceTree = "<group>"; };
 		96E19B441AF46B0700495E00 /* CraigSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CraigSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E19B481AF46B0700495E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96E19B491AF46B0700495E00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,9 +87,9 @@
 		96E19B7C1AF8640400495E00 /* PriceButton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PriceButton@3x.png"; sourceTree = "<group>"; };
 		96E19B8C1AF8645700495E00 /* SearchResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SearchResultCell.xib; path = Images/SearchResultCell.xib; sourceTree = "<group>"; };
 		96E19B8E1AF9026600495E00 /* SearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
-		96E19B901AF917C400495E00 /* NothingFoundCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
 		96E19BA21AFCB1D800495E00 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchResult.swift; path = ../SearchResult.swift; sourceTree = "<group>"; };
-		96E19BA41AFCB7A400495E00 /* LoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
+		96F7FF5B1B0BC14D00015477 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/NothingFoundCell.xib; sourceTree = "<group>"; };
+		96F7FF5F1B0C0CC200015477 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LoadingCell.xib; sourceTree = "<group>"; };
 		96F8E04E1B030E0B00BE943F /* BounceAnimateController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BounceAnimateController.swift; sourceTree = "<group>"; };
 		96F8E0501B03CB9F00BE943F /* SlideOutAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideOutAnimation.swift; sourceTree = "<group>"; };
 		96F8E0521B03CD0200BE943F /* LandscapeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandscapeViewController.swift; sourceTree = "<group>"; };
@@ -222,8 +224,8 @@
 			children = (
 				96E19B4D1AF46B0700495E00 /* Main.storyboard */,
 				96E19B8C1AF8645700495E00 /* SearchResultCell.xib */,
-				96E19BA41AFCB7A400495E00 /* LoadingCell.xib */,
-				96E19B901AF917C400495E00 /* NothingFoundCell.xib */,
+				96F7FF601B0C0CC200015477 /* LoadingCell.xib */,
+				96F7FF5C1B0BC14D00015477 /* NothingFoundCell.xib */,
 			);
 			name = "Storyboard and XIBs";
 			sourceTree = "<group>";
@@ -284,13 +286,14 @@
 					};
 				};
 			};
-			buildConfigurationList = 96E19B3F1AF46B0700495E00 /* Build configuration list for PBXProject "CraigSearch" */;
+			buildConfigurationList = 96E19B3F1AF46B0700495E00 /* Build configuration list for PBXProject "iTunesSearch" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 96E19B3B1AF46B0700495E00;
 			productRefGroup = 96E19B451AF46B0700495E00 /* Products */;
@@ -316,13 +319,13 @@
 				96E19B7F1AF8640400495E00 /* CloseButton@3x.png in Resources */,
 				96E19B851AF8640400495E00 /* LandscapeButton@3x.png in Resources */,
 				96E19B861AF8640400495E00 /* Placeholder.png in Resources */,
-				96E19B911AF917C400495E00 /* NothingFoundCell.xib in Resources */,
+				96F7FF5A1B0BC14D00015477 /* NothingFoundCell.xib in Resources */,
 				96E19B821AF8640400495E00 /* LandscapeBackground@3x.png in Resources */,
 				96E19B871AF8640400495E00 /* Placeholder@2x.png in Resources */,
 				96E19B811AF8640400495E00 /* LandscapeBackground@2x.png in Resources */,
 				96E19B8B1AF8640400495E00 /* PriceButton@3x.png in Resources */,
 				96E19B841AF8640400495E00 /* LandscapeButton@2x.png in Resources */,
-				96E19BA51AFCB7A400495E00 /* LoadingCell.xib in Resources */,
+				96F7FF5E1B0C0CC200015477 /* LoadingCell.xib in Resources */,
 				96E19B7D1AF8640400495E00 /* CloseButton.png in Resources */,
 				96E19B7E1AF8640400495E00 /* CloseButton@2x.png in Resources */,
 				96E19B8D1AF8645700495E00 /* SearchResultCell.xib in Resources */,
@@ -384,8 +387,26 @@
 			isa = PBXVariantGroup;
 			children = (
 				96E19B4E1AF46B0700495E00 /* Base */,
+				96B308741B0C62D300A1CAD3 /* fr */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		96F7FF5C1B0BC14D00015477 /* NothingFoundCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96F7FF5B1B0BC14D00015477 /* en */,
+			);
+			name = NothingFoundCell.xib;
+			sourceTree = "<group>";
+		};
+		96F7FF601B0C0CC200015477 /* LoadingCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96F7FF5F1B0C0CC200015477 /* Base */,
+				96B308751B0C62D300A1CAD3 /* fr */,
+			);
+			name = LoadingCell.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -529,7 +550,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		96E19B3F1AF46B0700495E00 /* Build configuration list for PBXProject "CraigSearch" */ = {
+		96E19B3F1AF46B0700495E00 /* Build configuration list for PBXProject "iTunesSearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96E19B611AF46B0700495E00 /* Debug */,

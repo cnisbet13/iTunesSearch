@@ -7,11 +7,11 @@
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
+            buildForTesting = "NO"
+            buildForRunning = "NO"
             buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "96E19B431AF46B0700495E00"
@@ -22,16 +22,44 @@
          </BuildActionEntry>
          <BuildActionEntry
             buildForTesting = "YES"
-            buildForRunning = "YES"
+            buildForRunning = "NO"
             buildForProfiling = "NO"
             buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
+            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "96E19B581AF46B0700495E00"
                BuildableName = "CraigSearchTests.xctest"
                BlueprintName = "CraigSearchTests"
                ReferencedContainer = "container:CraigSearch.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "96E19B431AF46B0700495E00"
+               BuildableName = "CraigSearch.app"
+               BlueprintName = "CraigSearch"
+               ReferencedContainer = "container:iTunesSearch">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "96E19B581AF46B0700495E00"
+               BuildableName = "CraigSearchTests.xctest"
+               BlueprintName = "CraigSearchTests"
+               ReferencedContainer = "container:iTunesSearch">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -59,7 +87,7 @@
             BlueprintIdentifier = "96E19B431AF46B0700495E00"
             BuildableName = "CraigSearch.app"
             BlueprintName = "CraigSearch"
-            ReferencedContainer = "container:CraigSearch.xcodeproj">
+            ReferencedContainer = "container:iTunesSearch">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -79,7 +107,7 @@
             BlueprintIdentifier = "96E19B431AF46B0700495E00"
             BuildableName = "CraigSearch.app"
             BlueprintName = "CraigSearch"
-            ReferencedContainer = "container:CraigSearch.xcodeproj">
+            ReferencedContainer = "container:iTunesSearch">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
